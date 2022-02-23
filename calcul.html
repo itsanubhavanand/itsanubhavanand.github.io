@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+<script src="calcul.js"> </script>
+</head>
+<body>
+<div class="container"> 
+<h2> Calculator </h2>
+
+<label for="num1">Number 1</label>
+<input type="number" id="num1"> </input>
+<br>
+
+<label for="num2">Number 2</label>
+<input type="number" id="num2"> </input>
+
+<br>
+<div> <h1 style="display: inline-block"> Output is:  </h1> <h1 style="display: inline-block" id="res"> </h1> </div>
+
+<br>
+<br>
+
+<button type="button" class="btn btn-primary" onclick="add()">Add</button>
+<button type="button" class="btn btn-success" onclick="sub()">Subtract</button>
+<button type="button" class="btn btn-danger" onclick="multi()">Multiply</button>
+<button type="button" class="btn btn-warning" onclick="divide()">Divide</button>
+
+ </div>
+
+</body>
+</Html>
