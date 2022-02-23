@@ -71,7 +71,7 @@ function clear1(){
 }
 
 function fiind(){
-		var s = document.getElementById('num1').value;
+		var s = parseInt(document.getElementById('num1').value);
 		var strEmployeeDataTable= "";
 	strEmployeeDataTable = '<table class="table table-striped table-hover">';
 	strEmployeeDataTable = strEmployeeDataTable + '<thead>';
@@ -80,11 +80,12 @@ function fiind(){
 	strEmployeeDataTable = strEmployeeDataTable + '<tboday>';
 		for( var i=0; i<employeeData.length; i++){
 
-			if(employeeData[i].EmpId == s){
+			if(parseInt(employeeData[i].EmpId) == s){
 				strEmployeeDataTable = strEmployeeDataTable + '<tr> <th scope="row">'+(i+1)+'</th> <th scope="row">'+employeeData[i].EmpId+'</th> <td>'+employeeData[i].First+'</td> <td>'+employeeData[i].Place+'</td> <td>'+employeeData[i].State+'</td> </tr>' ;
 				break;
 			}
-		}strEmployeeDataTable = strEmployeeDataTable + '</tbody>';
+		}
+	strEmployeeDataTable = strEmployeeDataTable + '</tbody>';
 	strEmployeeDataTable = strEmployeeDataTable + '</table>' ;
 	document.getElementById("place").innerHTML = strEmployeeDataTable ;
 		
